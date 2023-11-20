@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best-Selling Books</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 20px; 
+    }
+    div {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 10 Best-Selling Books</h1>
+  <h2><i>By New York Times</i></h2>
+
+  <% books.forEach(book => { %>
+    <div>
+      <h2><%= book.title %></h2>
+      <p>Author: <%= book.author %></p>
+    </div>
+  <% }); %>
+
+</body>
+</html>
